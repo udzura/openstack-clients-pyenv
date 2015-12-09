@@ -19,4 +19,4 @@ RUN ( source /etc/profile.d/pyenv.sh; \
 
 RUN ( cd /usr/local/pyenv/versions/2.7.11 ; tar czf /tmp/python-2.7.11-with-openstack-clients.tar.gz ./ )
 
-CMD ["cat", "/tmp/python-2.7.11-with-openstack-clients.tar.gz"]
+CMD ["cp", "/tmp/python-2.7.11-with-openstack-clients.tar.gz", "/pkg/python-2.7.11-with-openstack-clients.tar.gz"]
